@@ -17,6 +17,24 @@ jobs:
       run: |
         make
         sudo make test
+    - name: Sanity Check clib runs
+      run: ./clib --version
+    - name: Sanity Check clib-build runs
+      run: ./clib-build --version
+    - name: Sanity Check clib-configure runs
+      run: ./clib-configure --version
+    - name: Sanity Check clib-init runs
+      run: ./clib-init --version
+    - name: Sanity Check clib-install runs
+      run: ./clib-install --version
+    - name: Sanity Check clib-search runs
+      run: ./clib-search --version
+    - name: Sanity Check clib-uninstall runs
+      run: ./clib-uninstall --version
+    - name: Sanity Check clib-update runs
+      run: ./clib-update --version
+    - name: Sanity Check clib-upgrade runs
+      run: ./clib-upgrade --version
 
   macos:
     name: macOS
